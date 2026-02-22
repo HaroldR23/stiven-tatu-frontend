@@ -24,3 +24,17 @@ export const footerContent = {
       tagline: 'Art that lives on your skin'
     }
   };
+export const heroContent = {
+    es: {
+      title: 'Arte que vive en tu piel',
+      subtitle: 'Diseños únicos. Experiencias memorables.',
+      cta1: 'Reservar turno',
+      cta2: 'Ver trabajos'
+    },
+    en: {
+      title: 'Art that lives on your skin',
+      subtitle: 'Unique designs. Memorable experiences.',
+      cta1: 'Book Appointment',
+      cta2: 'View Work'
+    }
+  };
