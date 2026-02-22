@@ -228,3 +228,66 @@ export const reviewsContent = {
       ]
     }
   };
+
+export const productsContent = {
+    es: {
+      title: 'Productos',
+      products: [
+        {
+          name: 'Crema de Cuidado',
+          price: '$25',
+          description: 'Crema especializada para el cuidado de tatuajes',
+          image: 'https://images.unsplash.com/photo-1707395293453-26231b245d51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0YXR0b28lMjBjYXJlJTIwYWZ0ZXJjYXJlJTIwY3JlYW0lMjBza2lufGVufDF8fHx8MTc3MTUwNDcxOHww&ixlib=rb-4.1.0&q=80&w=1080'
+        },
+        {
+          name: 'Aftercare Kit',
+          price: '$45',
+          description: 'Kit completo de cuidados posteriores',
+          image: 'https://images.unsplash.com/photo-1761276297688-bc67f27c2577?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0YXR0b28lMjBzdHVkaW8lMjBlcXVpcG1lbnQlMjBwcm9mZXNzaW9uYWx8ZW58MXx8fHwxNzcxNTA0NzE0fDA&ixlib=rb-4.1.0&q=80&w=1080'
+        },
+        {
+          name: 'Merch del Estudio',
+          price: '$35',
+          description: 'Camisetas y accesorios exclusivos',
+          image: 'https://images.unsplash.com/photo-1682406585851-d81daab79411?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0YXR0b28lMjBtYWNoaW5lJTIwbmVlZGxlcyUyMHByb2Zlc3Npb25hbHxlbnwxfHx8fDE3NzE1MDQ3MTl8MA&ixlib=rb-4.1.0&q=80&w=1080'
+        },
+        {
+          name: 'Gift Card',
+          price: '$50-$500',
+          description: 'Tarjeta de regalo para sesiones',
+          image: 'https://images.unsplash.com/photo-1607943917700-18ec6ff5a4c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0YXR0b28lMjBhcnRpc3QlMjB3b3Jrc3BhY2UlMjBzdHVkaW8lMjBkYXJrfGVufDF8fHx8MTc3MTUwNDcxM3ww&ixlib=rb-4.1.0&q=80&w=1080'
+        }
+      ],
+      addToCart: 'Agregar'
+    },
+    en: {
+      title: 'Products',
+      products: [
+        {
+          name: 'Care Cream',
+          price: '$25',
+          description: 'Specialized tattoo care cream',
+          image: 'https://images.unsplash.com/photo-1707395293453-26231b245d51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0YXR0b28lMjBjYXJlJTIwYWZ0ZXJjYXJlJTIwY3JlYW0lMjBza2lufGVufDF8fHx8MTc3MTUwNDcxOHww&ixlib=rb-4.1.0&q=80&w=1080'
+        },
+        {
+          name: 'Aftercare Kit',
+          price: '$45',
+          description: 'Complete aftercare kit',
+          image: 'https://images.unsplash.com/photo-1761276297688-bc67f27c2577?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0YXR0b28lMjBzdHVkaW8lMjBlcXVpcG1lbnQlMjBwcm9mZXNzaW9uYWx8ZW58MXx8fHwxNzcxNTA0NzE0fDA&ixlib=rb-4.1.0&q=80&w=1080'
+        },
+        {
+          name: 'Studio Merch',
+          price: '$35',
+          description: 'Exclusive t-shirts and accessories',
+          image: 'https://images.unsplash.com/photo-1682406585851-d81daab79411?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0YXR0b28lMjBtYWNoaW5lJTIwbmVlZGxlcyUyMHByb2Zlc3Npb25hbHxlbnwxfHx8fDE3NzE1MDQ3MTl8MA&ixlib=rb-4.1.0&q=80&w=1080'
+        },
+        {
+          name: 'Gift Card',
+          price: '$50-$500',
+          description: 'Gift card for sessions',
+          image: 'https://images.unsplash.com/photo-1607943917700-18ec6ff5a4c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0YXR0b28lMjBhcnRpc3QlMjB3b3Jrc3BhY2UlMjBzdHVkaW8lMjBkYXJrfGVufDF8fHx8MTc3MTUwNDcxM3ww&ixlib=rb-4.1.0&q=80&w=1080'
+        }
+      ],
+      addToCart: 'Add to Cart'
+    }
+  };
