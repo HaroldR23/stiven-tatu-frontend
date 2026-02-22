@@ -291,3 +291,55 @@ export const productsContent = {
       addToCart: 'Add to Cart'
     }
   };
+export const FAQContent = {
+    es: {
+      title: 'Preguntas Frecuentes',
+      faqs: [
+        {
+          question: '¿Duele tatuarse?',
+          answer: 'El nivel de dolor varía según la zona del cuerpo y la tolerancia personal. Utilizamos técnicas que minimizan las molestias y nuestros artistas trabajan con cuidado para hacer la experiencia lo más cómoda posible.'
+        },
+        {
+          question: '¿Cómo preparo mi piel?',
+          answer: 'Mantén la piel hidratada días antes, evita el alcohol 24h antes de la sesión, descansa bien y come antes de tu cita. No uses cremas el día de la sesión.'
+        },
+        {
+          question: '¿Cuánto tarda en sanar?',
+          answer: 'La cicatrización superficial toma 2-3 semanas, mientras que la sanación completa puede tardar 2-3 meses. Sigue nuestras instrucciones de cuidado para mejores resultados.'
+        },
+        {
+          question: '¿Puedo llevar mi diseño?',
+          answer: 'Sí, puedes traer ideas y referencias. Nuestros artistas trabajarán contigo para adaptar o crear un diseño único que se ajuste a tu visión y anatomía.'
+        },
+        {
+          question: '¿Cuidados posteriores?',
+          answer: 'Limpia suavemente con agua y jabón neutro, aplica crema especial 2-3 veces al día, evita el sol directo, no sumerjas en agua (piscinas, mar) durante 2-3 semanas.'
+        }
+      ]
+    },
+    en: {
+      title: 'Frequently Asked Questions',
+      faqs: [
+        {
+          question: 'Does it hurt to get a tattoo?',
+          answer: 'Pain levels vary depending on body area and personal tolerance. We use techniques that minimize discomfort and our artists work carefully to make the experience as comfortable as possible.'
+        },
+        {
+          question: 'How do I prepare my skin?',
+          answer: 'Keep your skin moisturized days before, avoid alcohol 24h before the session, rest well and eat before your appointment. Don\'t use creams on the day of the session.'
+        },
+        {
+          question: 'How long does it take to heal?',
+          answer: 'Superficial healing takes 2-3 weeks, while complete healing can take 2-3 months. Follow our care instructions for best results.'
+        },
+        {
+          question: 'Can I bring my own design?',
+          answer: 'Yes, you can bring ideas and references. Our artists will work with you to adapt or create a unique design that fits your vision and anatomy.'
+        },
+        {
+          question: 'Aftercare?',
+          answer: 'Gently clean with water and neutral soap, apply special cream 2-3 times a day, avoid direct sun, don\'t submerge in water (pools, sea) for 2-3 weeks.'
+        }
+      ]
+    }
+  };
