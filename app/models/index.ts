@@ -48,3 +48,4 @@ export interface ReviewsProps extends BaseProps {}
 export interface ProductsProps extends BaseProps {}
 export interface FAQProps extends BaseProps {}
 export interface AftercareProps extends BaseProps {}
+export interface CoursesProps extends BaseProps {}
