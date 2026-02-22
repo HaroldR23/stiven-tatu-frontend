@@ -44,3 +44,6 @@ export interface BookingFormProps {
   toggleStyle: (style: string) => void;
   step: number;
 }
+export interface AboutProps {
+  language: Languages;
+}
