@@ -1,4 +1,4 @@
-import { Award, Clock, Droplet, Facebook, Instagram, Shield, Sparkles, Sun, TicketCheckIcon, Twitter, Youtube } from "lucide-react";
+import { Award, BookOpen, Clock, Droplet, Facebook, Instagram, Pen, Shield, Sparkles, Sun, TicketCheckIcon, Twitter, Youtube } from "lucide-react";
 import { TikTok } from "./icons";
 import { FormData } from "../models";
 
@@ -403,5 +403,77 @@ export const aftercareContent = {
           day: 'Days 7-21'
         }
       ]
+    }
+  };
+export const coursesContent = {
+    es: {
+      title: 'Cursos de Tatuaje',
+      subtitle: 'Aprende el arte del tatuaje con profesionales',
+      courses: [
+        {
+          icon: BookOpen,
+          title: 'Curso Inicial',
+          description: 'Fundamentos del tatuaje, equipamiento y primeros trazos',
+          duration: '8 semanas',
+          level: 'Principiante'
+        },
+        {
+          icon: Pen,
+          title: 'Técnicas de Líneas Finas',
+          description: 'Domina el arte del fine line y micro tatuajes',
+          duration: '6 semanas',
+          level: 'Intermedio'
+        },
+        {
+          icon: Shield,
+          title: 'Higiene y Seguridad',
+          description: 'Protocolos profesionales y manejo de equipos',
+          duration: '4 semanas',
+          level: 'Todos los niveles'
+        },
+        {
+          icon: Award,
+          title: 'Certificación Profesional',
+          description: 'Completa tu formación y obtén tu certificado',
+          duration: '12 semanas',
+          level: 'Avanzado'
+        }
+      ],
+      cta: 'Ver Programa Completo'
+    },
+    en: {
+      title: 'Tattoo Courses',
+      subtitle: 'Learn the art of tattooing with professionals',
+      courses: [
+        {
+          icon: BookOpen,
+          title: 'Initial Course',
+          description: 'Tattoo fundamentals, equipment and first strokes',
+          duration: '8 weeks',
+          level: 'Beginner'
+        },
+        {
+          icon: Pen,
+          title: 'Fine Line Techniques',
+          description: 'Master the art of fine line and micro tattoos',
+          duration: '6 weeks',
+          level: 'Intermediate'
+        },
+        {
+          icon: Shield,
+          title: 'Hygiene and Safety',
+          description: 'Professional protocols and equipment handling',
+          duration: '4 weeks',
+          level: 'All levels'
+        },
+        {
+          icon: Award,
+          title: 'Professional Certification',
+          description: 'Complete your training and get certified',
+          duration: '12 weeks',
+          level: 'Advanced'
+        }
+      ],
+      cta: 'View Full Program'
     }
   };

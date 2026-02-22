@@ -9,6 +9,7 @@ import Reviews from "./components/Reviews";
 import Products from "./components/Products";
 import FAQ from "./components/FAQ";
 import Aftercare from "./components/Aftercare";
+import Courses from "./components/Courses";
 
 export default function Home() {
   const { language } = usePreferences();
@@ -22,6 +23,7 @@ export default function Home() {
       <Products language={language} />
       <FAQ language={language} />
       <Aftercare language={language} />
+      <Courses language={language} />
       <BookingModal 
         isOpen={isBookingOpen} 
         onClose={() => setIsBookingOpen(false)} 
