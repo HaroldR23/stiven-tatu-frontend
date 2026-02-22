@@ -45,3 +45,4 @@ export interface BookingFormProps extends BaseProps {
 }
 export interface AboutProps extends BaseProps {}
 export interface ReviewsProps extends BaseProps {}  
+export interface ProductsProps extends BaseProps {}
