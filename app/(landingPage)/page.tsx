@@ -5,6 +5,7 @@ import usePreferences from "../hooks/usePreferences";
 import Hero from "./components/Hero";
 import BookingModal from "./components/Booking/BookingModal";
 import About from "./components/About";
+import Reviews from "./components/Reviews";
 
 export default function Home() {
   const { language } = usePreferences();
@@ -14,6 +15,7 @@ export default function Home() {
     <div>
       <Hero language={language} onBookingClick={() => setIsBookingOpen(true)}/>
       <About language={language} />
+      <Reviews language={language} />
       <BookingModal 
         isOpen={isBookingOpen} 
         onClose={() => setIsBookingOpen(false)} 
