@@ -1,4 +1,4 @@
-import { Facebook, Instagram, TicketCheckIcon, Twitter, Youtube } from "lucide-react";
+import { Award, Facebook, Instagram, Shield, Sparkles, TicketCheckIcon, Twitter, Youtube } from "lucide-react";
 import { TikTok } from "./icons";
 import { FormData } from "../models";
 
@@ -132,3 +132,47 @@ export const initFormData: FormData = {
     isOver18: false,
     acceptsPrivacy: false
 };
+export const aboutContent = {
+    es: {
+      title: 'Acerca de Stiventatu',
+      description: 'Stiventatu es un estudio donde el arte, la precisión y la identidad personal se unen. Creamos tatuajes únicos diseñados para acompañarte toda la vida.',
+      values: [
+        {
+          icon: Sparkles,
+          title: 'Originalidad',
+          description: 'Cada diseño es único y personalizado'
+        },
+        {
+          icon: Shield,
+          title: 'Higiene',
+          description: 'Protocolos de seguridad profesionales'
+        },
+        {
+          icon: Award,
+          title: 'Experiencia',
+          description: 'Artistas con años de trayectoria'
+        }
+      ]
+    },
+    en: {
+      title: 'About Stiventatu',
+      description: 'Stiventatu is a studio where art, precision and personal identity come together. We create unique tattoos designed to accompany you for a lifetime.',
+      values: [
+        {
+          icon: Sparkles,
+          title: 'Originality',
+          description: 'Each design is unique and personalized'
+        },
+        {
+          icon: Shield,
+          title: 'Hygiene',
+          description: 'Professional safety protocols'
+        },
+        {
+          icon: Award,
+          title: 'Experience',
+          description: 'Artists with years of experience'
+        }
+      ]
+    }
+  };
