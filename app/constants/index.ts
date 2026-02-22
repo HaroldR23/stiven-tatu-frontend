@@ -1,4 +1,4 @@
-import { Award, Facebook, Instagram, Shield, Sparkles, TicketCheckIcon, Twitter, Youtube } from "lucide-react";
+import { Award, Clock, Droplet, Facebook, Instagram, Shield, Sparkles, Sun, TicketCheckIcon, Twitter, Youtube } from "lucide-react";
 import { TikTok } from "./icons";
 import { FormData } from "../models";
 
@@ -339,6 +339,68 @@ export const FAQContent = {
         {
           question: 'Aftercare?',
           answer: 'Gently clean with water and neutral soap, apply special cream 2-3 times a day, avoid direct sun, don\'t submerge in water (pools, sea) for 2-3 weeks.'
+        }
+      ]
+    }
+  };  
+export const aftercareContent = {
+    es: {
+      title: 'Cuidados Posteriores',
+      subtitle: 'Guía paso a paso para el cuidado de tu tatuaje',
+      steps: [
+        {
+          icon: Shield,
+          title: 'Limpieza y Protección',
+          description: 'Lava suavemente con agua tibia y jabón neutro 2-3 veces al día. Seca con toques suaves.',
+          day: 'Días 1-3'
+        },
+        {
+          icon: Droplet,
+          title: 'Hidratación Adecuada',
+          description: 'Aplica crema especializada en capa fina. No excedas la cantidad ni la frecuencia.',
+          day: 'Días 4-14'
+        },
+        {
+          icon: Sun,
+          title: 'Evitar Sol y Agua',
+          description: 'No expongas al sol directo. Evita piscinas, mar y baños prolongados.',
+          day: 'Días 1-21'
+        },
+        {
+          icon: Clock,
+          title: 'Proceso de Cicatrización',
+          description: 'Es normal que se forme costra y pele. No rasques ni arranques la piel.',
+          day: 'Días 7-21'
+        }
+      ]
+    },
+    en: {
+      title: 'Aftercare',
+      subtitle: 'Step-by-step guide for tattoo care',
+      steps: [
+        {
+          icon: Shield,
+          title: 'Cleaning and Protection',
+          description: 'Gently wash with warm water and neutral soap 2-3 times a day. Pat dry gently.',
+          day: 'Days 1-3'
+        },
+        {
+          icon: Droplet,
+          title: 'Proper Hydration',
+          description: 'Apply specialized cream in a thin layer. Don\'t exceed the amount or frequency.',
+          day: 'Days 4-14'
+        },
+        {
+          icon: Sun,
+          title: 'Avoid Sun and Water',
+          description: 'Don\'t expose to direct sunlight. Avoid pools, sea and prolonged baths.',
+          day: 'Days 1-21'
+        },
+        {
+          icon: Clock,
+          title: 'Healing Process',
+          description: 'It\'s normal for it to scab and peel. Don\'t scratch or pick at the skin.',
+          day: 'Days 7-21'
         }
       ]
     }
