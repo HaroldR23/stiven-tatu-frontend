@@ -1,19 +1,19 @@
+interface BaseProps {
+  language: Languages;
+}
+
 export enum Languages {
   ENGLISH = "en",
   SPANISH = "es"
 }
 
-export interface HeroProps {
-  language: Languages;
+export interface HeroProps extends BaseProps {
   onBookingClick: () => void;
 }
-
-export interface BookingModalProps {
+export interface BookingModalProps extends BaseProps {
   isOpen: boolean;
   onClose: () => void;
-  language: Languages;
 }
-
 export interface FormData {
   // Step 1
   fullName: string;
@@ -33,8 +33,7 @@ export interface FormData {
   isOver18: boolean;
   acceptsPrivacy: boolean;
 }
-export interface BookingFormProps {
-  language: Languages;
+export interface BookingFormProps extends BaseProps {
   formData: FormData;
   isSubmitted: boolean;
   onClose: () => void;
@@ -44,6 +43,5 @@ export interface BookingFormProps {
   toggleStyle: (style: string) => void;
   step: number;
 }
-export interface AboutProps {
-  language: Languages;
-}
+export interface AboutProps extends BaseProps {}
+export interface ReviewsProps extends BaseProps {}  

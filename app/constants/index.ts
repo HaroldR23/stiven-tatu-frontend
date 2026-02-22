@@ -176,3 +176,55 @@ export const aboutContent = {
       ]
     }
   };
+export const reviewsContent = {
+    es: {
+      title: 'Reseñas de clientes',
+      reviews: [
+        {
+          name: 'María González',
+          review: 'El diseño superó mis expectativas. Profesionalismo y arte real.',
+          image: 'https://images.unsplash.com/photo-1764698072654-b8c360ff480e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwdGF0dG9vJTIwZGVzaWduJTIwZWxlZ2FudHxlbnwxfHx8fDE3NzE1MDQ3MTV8MA&ixlib=rb-4.1.0&q=80&w=1080'
+        },
+        {
+          name: 'Carlos Ramírez',
+          review: 'Increíble experiencia de principio a fin. Totalmente recomendado.',
+          image: 'https://images.unsplash.com/photo-1758404255679-9afd847ede1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnZW9tZXRyaWMlMjB0YXR0b28lMjBibGFjayUyMGluayUyMGFydGlzdGljfGVufDF8fHx8MTc3MTUwNDcxOHww&ixlib=rb-4.1.0&q=80&w=1080'
+        },
+        {
+          name: 'Ana Martínez',
+          review: 'Atención personalizada y resultado impecable. Volveré sin duda.',
+          image: 'https://images.unsplash.com/photo-1623792085620-1f3160a255e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxibGFjayUyMHdoaXRlJTIwdGF0dG9vJTIwYXJ0JTIwZGV0YWlsZWR8ZW58MXx8fHwxNzcxNTA0NzE0fDA&ixlib=rb-4.1.0&q=80&w=1080'
+        },
+        {
+          name: 'Diego López',
+          review: 'Trabajo detallado y limpio. Los mejores artistas de la ciudad.',
+          image: 'https://images.unsplash.com/photo-1607943917700-18ec6ff5a4c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0YXR0b28lMjBhcnRpc3QlMjB3b3Jrc3BhY2UlMjBzdHVkaW8lMjBkYXJrfGVufDF8fHx8MTc3MTUwNDcxM3ww&ixlib=rb-4.1.0&q=80&w=1080'
+        }
+      ]
+    },
+    en: {
+      title: 'Client Reviews',
+      reviews: [
+        {
+          name: 'María González',
+          review: 'The design exceeded my expectations. True professionalism and art.',
+          image: 'https://images.unsplash.com/photo-1764698072654-b8c360ff480e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwdGF0dG9vJTIwZGVzaWduJTIwZWxlZ2FudHxlbnwxfHx8fDE3NzE1MDQ3MTV8MA&ixlib=rb-4.1.0&q=80&w=1080'
+        },
+        {
+          name: 'Carlos Ramírez',
+          review: 'Amazing experience from start to finish. Highly recommended.',
+          image: 'https://images.unsplash.com/photo-1758404255679-9afd847ede1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnZW9tZXRyaWMlMjB0YXR0b28lMjBibGFjayUyMGluayUyMGFydGlzdGljfGVufDF8fHx8MTc3MTUwNDcxOHww&ixlib=rb-4.1.0&q=80&w=1080'
+        },
+        {
+          name: 'Ana Martínez',
+          review: 'Personalized attention and impeccable results. Will return for sure.',
+          image: 'https://images.unsplash.com/photo-1623792085620-1f3160a255e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxibGFjayUyMHdoaXRlJTIwdGF0dG9vJTIwYXJ0JTIwZGV0YWlsZWR8ZW58MXx8fHwxNzcxNTA0NzE0fDA&ixlib=rb-4.1.0&q=80&w=1080'
+        },
+        {
+          name: 'Diego López',
+          review: 'Detailed and clean work. The best artists in the city.',
+          image: 'https://images.unsplash.com/photo-1607943917700-18ec6ff5a4c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0YXR0b28lMjBhcnRpc3QlMjB3b3Jrc3BhY2UlMjBzdHVkaW8lMjBkYXJrfGVufDF8fHx8MTc3MTUwNDcxM3ww&ixlib=rb-4.1.0&q=80&w=1080'
+        }
+      ]
+    }
+  };
