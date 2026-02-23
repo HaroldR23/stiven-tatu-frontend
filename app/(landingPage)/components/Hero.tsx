@@ -1,7 +1,6 @@
 import { heroContent } from '@/app/constants';
 import { HeroProps } from '@/app/models';
 import { motion } from 'motion/react';
-import Image from 'next/image';
 
 
 const Hero = ({ language, onBookingClick }: HeroProps) => {
@@ -26,13 +25,14 @@ const Hero = ({ language, onBookingClick }: HeroProps) => {
           className="absolute inset-0 w-full h-full object-cover"
         >
           <source
+            src="/tattoo_video_desktop.mp4"
+            type="video/mp4"
+            media="(min-width: 768px)"
+          />
+          <source
             src="/tattoo_video_mobile.mp4"
             type="video/mp4"
             media="(max-width: 767px)"
-          />
-          <source
-            src="/tattoo_video_desktop.mp4"
-            type="video/mp4"
           />
         </video>
         <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/50 to-black" />
