@@ -1,5 +1,4 @@
 import { motion } from 'motion/react';
-import { MapPin } from 'lucide-react';
 import { contactContent, contactItems } from '@/app/constants';
 import { ContactProps } from '@/app/models';
 
