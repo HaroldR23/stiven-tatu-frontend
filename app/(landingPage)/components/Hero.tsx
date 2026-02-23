@@ -1,9 +1,20 @@
+"use client";
+
 import { heroContent } from '@/app/constants';
 import { HeroProps } from '@/app/models';
 import { motion } from 'motion/react';
+import { useEffect, useState } from 'react';
+import { useMediaQuery } from "react-responsive";
 
 
 const Hero = ({ language, onBookingClick }: HeroProps) => {
+
+  const isTabletOrMobile = useMediaQuery({ maxWidth: 767 });
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -11,6 +22,8 @@ const Hero = ({ language, onBookingClick }: HeroProps) => {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  if (!mounted) return null;
 
   return (
     <section id="hero" className="relative h-screen flex items-center justify-center overflow-hidden">
@@ -25,14 +38,11 @@ const Hero = ({ language, onBookingClick }: HeroProps) => {
           className="absolute inset-0 w-full h-full object-cover"
         >
           <source
-            src="/tattoo_video_desktop.mp4"
+            src={isTabletOrMobile
+              ? "/tattoo_video_mobile.mp4"
+              : "/tattoo_video_desktop.mp4"
+            }
             type="video/mp4"
-            media="(min-width: 768px)"
-          />
-          <source
-            src="/tattoo_video_mobile.mp4"
-            type="video/mp4"
-            media="(max-width: 767px)"
           />
         </video>
         <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/50 to-black" />
