@@ -18,13 +18,29 @@ const Hero = ({ language, onBookingClick }: HeroProps) => {
       {/* Background Video with Overlay */}
       <div className="absolute inset-0">
         <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full h-full object-cover"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            className={`absolute inset-0 w-full h-full transition-opacity duration-700 opacity-100`}
+            style={{
+              objectFit: 'cover',
+              objectPosition: 'center',
+              minWidth: '100%',
+              minHeight: '100%',
+            }}
         >
-          <source src="/tattoo_video.mp4" type="video/mp4" />
+          <source
+            src="/tattoo_video_mobile.mp4"
+            type="video/mp4"
+            media="(max-width: 767px)"
+          />
+          <source
+            src="/tattoo_video_desktop.mp4"
+            type="video/mp4"
+            media="(min-width: 768px)"
+          />
           <Image src="/tattoo_hero.jpeg" alt="Tattoo Studio" fill className="object-cover" />
         </video>
         <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/50 to-black" />
