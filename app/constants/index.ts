@@ -1,6 +1,21 @@
-import { Award, BookOpen, Clock, Droplet, Facebook, Instagram, Pen, Shield, Sparkles, Sun, TicketCheckIcon, Twitter, Youtube } from "lucide-react";
+import { 
+  Award, 
+  BookOpen, 
+  Clock, 
+  Droplet, 
+  Facebook, 
+  Instagram, 
+  Mail, 
+  MapPin, 
+  MessageCircle, 
+  Pen, 
+  Shield, 
+  Sparkles, 
+  Sun, 
+  Youtube
+} from "lucide-react";
 import { TikTok } from "./icons";
-import { FormData } from "../models";
+import { FormData, Languages } from "../models";
 
 
 export const networkLinks = [
@@ -477,3 +492,49 @@ export const coursesContent = {
       cta: 'View Full Program'
     }
   };
+export const phoneNumber = "+54 9 117364-7165";
+export const contactContent = {
+    es: {
+      title: 'Contacto',
+      subtitle: 'Visítanos o escríbenos',
+      info: {
+        address: 'San Telmo, Buenos Aires',
+        phone: phoneNumber,
+        email: 'info@stiventatu.com',
+        instagram: '@stiventatu',
+        hours: 'Lun-Sáb: 10:00 - 20:00'
+      },
+      labels: {
+        address: 'Dirección',
+        phone: 'WhatsApp',
+        email: 'Email',
+        instagram: 'Instagram',
+        hours: 'Horarios'
+      }
+    },
+    en: {
+      title: 'Contact',
+      subtitle: 'Visit us or write to us',
+      info: {
+        address: 'San Telmo, Buenos Aires',
+        phone: phoneNumber,
+        email: 'info@stiventatu.com',
+        instagram: '@stiventatu',
+        hours: 'Mon-Sat: 10:00 - 20:00'
+      },
+      labels: {
+        address: 'Address',
+        phone: 'WhatsApp',
+        email: 'Email',
+        instagram: 'Instagram',
+        hours: 'Hours'
+      }
+    }
+  };
+export const contactItems = (language: Languages) => [
+    { icon: MapPin, label: contactContent[language].labels.address, value: contactContent[language].info.address, isLink: false },
+    { icon: MessageCircle, label: contactContent[language].labels.phone, value: contactContent[language].info.phone, isLink: true, linkPrefix: 'https://wa.me/' },
+    { icon: Mail, label: contactContent[language].labels.email, value: contactContent[language].info.email, isLink: true, linkPrefix: 'mailto:info@stiventatu.com' },
+    { icon: Instagram, label: contactContent[language].labels.instagram, value: contactContent[language].info.instagram, isLink: true, linkPrefix: 'https://www.instagram.com/stiventatu?igsh=MWNxemUwbjZwcmtnMg' },
+    { icon: Clock, label: contactContent[language].labels.hours, value: contactContent[language].info.hours, isLink: false }
+  ];

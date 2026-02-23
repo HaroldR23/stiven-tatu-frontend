@@ -49,3 +49,4 @@ export interface ProductsProps extends BaseProps {}
 export interface FAQProps extends BaseProps {}
 export interface AftercareProps extends BaseProps {}
 export interface CoursesProps extends BaseProps {}
+export interface ContactProps extends BaseProps {}
