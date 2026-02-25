@@ -43,6 +43,9 @@ export interface BookingFormProps extends BaseProps {
   toggleStyle: (style: string) => void;
   step: number;
 }
+export interface BookingProcessProps extends BaseProps {
+  onBookingClick: () => void;
+}
 export interface AboutProps extends BaseProps {}
 export interface ReviewsProps extends BaseProps {}  
 export interface ProductsProps extends BaseProps {}

@@ -8,9 +8,9 @@ import About from "./components/About";
 import Reviews from "./components/Reviews";
 import Products from "./components/Products";
 import FAQ from "./components/FAQ";
-import Aftercare from "./components/Aftercare";
 import Courses from "./components/Courses";
 import Contact from "./components/Contact";
+import BookingProcess from "./components/Booking/BookingProcess";
 
 export default function Home() {
   const { language } = usePreferences();
@@ -23,7 +23,8 @@ export default function Home() {
       <Reviews language={language} />
       <Products language={language} />
       <FAQ language={language} />
-      <Aftercare language={language} />
+      <BookingProcess language={language} onBookingClick={() => setIsBookingOpen(true)} />
+      {/* <Aftercare language={language} /> */}
       <Courses language={language} />
       <Contact language={language} />
       <BookingModal 

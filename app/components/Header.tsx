@@ -6,6 +6,7 @@ import { Menu, X } from 'lucide-react';
 import usePreferences from '../hooks/usePreferences';
 import { Languages } from '../models';
 import { navItems, sections, studyName } from '../constants';
+import { scrollToSection } from '../utils';
 
 const Header = () => {
   const { language, setLanguage } = usePreferences();
@@ -21,10 +22,9 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
+  const handleScrollToSection = (id: string) => {
+    const element = scrollToSection(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
       setIsMobileMenuOpen(false);
     }
   };
@@ -42,7 +42,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <motion.button
-            onClick={() => scrollToSection('hero')}
+            onClick={() => handleScrollToSection('hero')}
             className="text-2xl tracking-wider"
             whileHover={{ scale: 1.05 }}
             style={{ fontFamily: 'var(--font-serif)' }}
@@ -55,7 +55,7 @@ const Header = () => {
             {navItems[language].map((item, index) => (
               <button
                 key={item}
-                onClick={() => scrollToSection(sections[index])}
+                onClick={() => handleScrollToSection(sections[index])}
                 className="text-sm tracking-wide hover:text-accent transition-colors duration-300 cursor-pointer"
               >
                 {item}
@@ -101,7 +101,7 @@ const Header = () => {
             {navItems[language].map((item, index) => (
               <button
                 key={item}
-                onClick={() => scrollToSection(sections[index])}
+                onClick={() => handleScrollToSection(sections[index])}
                 className="block w-full text-left py-3 px-4 hover:bg-secondary transition-colors cursor-pointer"
               >
                 {item}
