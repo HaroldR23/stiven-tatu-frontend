@@ -2,6 +2,7 @@
 
 import { heroContent } from '@/app/constants';
 import { HeroProps } from '@/app/models';
+import { scrollToSection } from '@/app/utils';
 import { motion } from 'motion/react';
 import { useEffect, useState } from 'react';
 import { useMediaQuery } from "react-responsive";
@@ -15,13 +16,6 @@ const Hero = ({ language, onBookingClick }: HeroProps) => {
   useEffect(() => {
     setMounted(true);
   }, []);
-
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   if (!mounted) return null;
 
@@ -78,7 +72,7 @@ const Hero = ({ language, onBookingClick }: HeroProps) => {
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
           <motion.button
-            onClick={onBookingClick}
+            onClick={() => scrollToSection('booking-process')}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="px-8 py-4 bg-accent text-accent-foreground tracking-wide hover:bg-accent/90 min-w-50"

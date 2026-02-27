@@ -66,7 +66,7 @@ export const formContent = {
       step2: {
         title: 'Sobre tu tattoo',
         styles: 'Estilos',
-        styleOptions: ['Fine line', 'Micro realismo', 'Handpoke', 'Solid lines', 'Otro'],
+        styleOptions: ['Realismo', 'Surealismo', 'Ilustrativo', 'Geometría', 'Personalizado'],
         color: 'Color',
         colorOptions: ['Color', 'Blanco & Negro'],
         location: 'Ubicación del tatuaje',
@@ -103,7 +103,7 @@ export const formContent = {
       step2: {
         title: 'About Your Tattoo',
         styles: 'Styles',
-        styleOptions: ['Fine line', 'Micro realism', 'Handpoke', 'Solid lines', 'Other'],
+        styleOptions: ['Realism', 'Surrealism', 'Illustrative', 'Geometry', 'Customized'],
         color: 'Color',
         colorOptions: ['Color', 'Black & White'],
         location: 'Tattoo Location',
@@ -538,3 +538,49 @@ export const contactItems = (language: Languages) => [
     { icon: Instagram, label: contactContent[language].labels.instagram, value: contactContent[language].info.instagram, isLink: true, linkPrefix: 'https://www.instagram.com/stiventatu?igsh=MWNxemUwbjZwcmtnMg' },
     { icon: Clock, label: contactContent[language].labels.hours, value: contactContent[language].info.hours, isLink: false }
   ];
+export const bookingContent = {
+  es: {
+    title: 'Hacer una reserva',
+    steps: [
+      {
+        title: 'Haz clic en Agendar una cita',
+        description: 'Para el mejor Agendamiento para ti, con la información y detalles de tu cita.',
+      },
+      {
+        title: 'Introduce tus datos',
+        description: 'Así podremos contactar tu solicitud y completar tu formulario, solo completalo.',
+      },
+      {
+        title: 'Sube las fotos',
+        description: 'Sube todas las fotos que quieras: un boceto o la ubicación que deseas.',
+      },
+      {
+        title: 'Te contactaremos',
+        description: 'Te contactaremos para presentar toda la información alternativa y confirmar tu cita.',
+      },
+    ],
+    button: 'Agendar una cita',
+  },
+  en: {
+    title: 'Make a reservation',
+    steps: [
+      {
+        title: 'Click on Book an appointment',
+        description: 'For the best scheduling for you, with all the information and details of your appointment.',
+      },
+      {
+        title: 'Enter your details',
+        description: "We'll be able to contact you and complete your form, just fill it out.",
+      },
+      {
+        title: 'Upload photos',
+        description: 'Upload all the photos you want: a sketch or the location you desire.',
+      },
+      {
+        title: 'We will contact you',
+        description: 'We will contact you to present all the information and confirm your appointment.',
+      },
+    ],
+    button: 'Book an appointment',
+  },
+};
