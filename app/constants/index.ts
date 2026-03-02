@@ -584,3 +584,20 @@ export const bookingContent = {
     button: 'Book an appointment',
   },
 };
+export const floatingContent = {
+  es: {
+    title: '¿Necesitás ayuda?',
+    subtitle: 'Escribinos o reservá tu turno directamente',
+    whatsapp: 'Chatear por WhatsApp',
+    form: 'Reservar turno',
+    whatsappMessage: '¡Hola! Me gustaría consultar sobre un tatuaje en Stiventatu'
+  },
+  en: {
+    title: 'Need help?',
+    subtitle: 'Message us or book your appointment directly',
+    whatsapp: 'Chat on WhatsApp',
+    form: 'Book appointment',
+    whatsappMessage: 'Hi! I would like to inquire about a tattoo at Stiventatu'
+  },
+};
+export const whatsappUrl = `https://wa.me/5491173647165`;
