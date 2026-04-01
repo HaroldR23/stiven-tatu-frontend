@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { useCallback, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, ChevronRight, ChevronLeft, Check } from 'lucide-react';
 import { BookingFormProps } from '@/app/models';
 import { formContent } from '@/app/constants';
+import { Turnstile } from 'react-turnstile';
 
 const BookingForm = ({
   step, 
@@ -13,8 +14,32 @@ const BookingForm = ({
   setFormData, 
   isSubmitted, 
   setStep, 
-  toggleStyle
+  toggleStyle,
+  error,
+  clearError
 }: BookingFormProps) => {
+
+  const errorRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!error) return;
+    const handleClickOutside = (event: MouseEvent) => {
+      if (errorRef.current && !errorRef.current.contains(event.target as Node)) {
+        clearError?.();
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [error, clearError]);
+
+  const handleCaptcha = useCallback((token: string) => {
+    setFormData(prev => ({ ...prev, captchaToken: token }));
+  }, []);
+
+  const clearCaptcha = useCallback(() => {
+    setFormData(prev => ({ ...prev, captchaToken: undefined }));
+  }, []);
+
   return (
     <div className="p-6">
       <AnimatePresence mode="wait">
@@ -175,32 +200,74 @@ const BookingForm = ({
                     rows={3}
                     className="w-full px-4 py-3 bg-input-background border border-white/10 focus:border-accent focus:outline-none transition-colors resize-none"
                   />
-                  <input
-                    type="text"
-                    placeholder={formContent[language].step3.preferredDate}
-                    value={formData.preferredDate}
-                    onChange={(e) => setFormData({ ...formData, preferredDate: e.target.value })}
-                    className="w-full px-4 py-3 bg-input-background border border-white/10 focus:border-accent focus:outline-none transition-colors"
-                  />
-                  <label className="flex items-center space-x-3 cursor-pointer">
-                    <input
-                      type="checkbox"
-                      checked={formData.isOver18}
-                      onChange={(e) => setFormData({ ...formData, isOver18: e.target.checked })}
-                      className="w-5 h-5 accent-accent"
+                  {/* Date and Time Pickers */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                      <label className="block mb-2 text-sm text-muted-foreground">
+                        {formContent[language].step3.preferredDate}
+                      </label>
+                      <input
+                        type="date"
+                        value={formData.preferredDate}
+                        onChange={(e) => setFormData({ ...formData, preferredDate: e.target.value })}
+                        className="w-full px-4 py-3 bg-input-background border border-white/10 focus:border-accent focus:outline-none transition-colors text-foreground [color-scheme:dark]"
+                        min={new Date().toISOString().split('T')[0]}
+                      />
+                    </div>
+                    <div>
+                      <label className="block mb-2 text-sm text-muted-foreground">
+                        {formContent[language].step3.preferredTime}
+                      </label>
+                      <input
+                        type="time"
+                        value={formData.preferredTime}
+                        onChange={(e) => setFormData({ ...formData, preferredTime: e.target.value })}
+                        className="w-full px-4 py-3 bg-input-background border border-white/10 focus:border-accent focus:outline-none transition-colors text-foreground [color-scheme:dark]"
+                      />
+                    </div>
+                  </div>
+                  <div className='flex flex-row gap-6'>
+                    <div>
+                      <label className="flex items-center space-x-3 cursor-pointer">
+                        <input
+                          type="checkbox"
+                          checked={formData.isOver18}
+                          onChange={(e) => setFormData({ ...formData, isOver18: e.target.checked })}
+                          className="w-5 h-5 accent-accent"
+                          />
+                        <span>{formContent[language].step3.over18}</span>
+                      </label>
+                      <label className="flex items-center space-x-3 cursor-pointer">
+                        <input
+                          type="checkbox"
+                          checked={formData.acceptsPrivacy}
+                          onChange={(e) => setFormData({ ...formData, acceptsPrivacy: e.target.checked })}
+                          className="w-5 h-5 accent-accent"
+                          />
+                        <span>{formContent[language].step3.privacy}</span>
+                      </label>
+                    </div>
+
+                    <Turnstile
+                      sitekey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || ""}
+                      onSuccess={handleCaptcha}
+                      onExpire={clearCaptcha}
+                      refreshExpired="auto"
+                      theme="dark"
+                      className="flex justify-center"
+                      size="flexible"
+                      language="en"
                     />
-                    <span>{formContent[language].step3.over18}</span>
-                  </label>
-                  <label className="flex items-center space-x-3 cursor-pointer">
-                    <input
-                      type="checkbox"
-                      checked={formData.acceptsPrivacy}
-                      onChange={(e) => setFormData({ ...formData, acceptsPrivacy: e.target.checked })}
-                      className="w-5 h-5 accent-accent"
-                    />
-                    <span>{formContent[language].step3.privacy}</span>
-                  </label>
+
+                  </div>
                 </div>
+                {
+                  error && (
+                    <div ref={errorRef} className="p-4 bg-red-100 text-red-700 text-sm mt-4 mx-6 rounded">
+                      {error}
+                    </div>
+                  )
+                }
                 <div className="mt-6 flex gap-4">
                   <button
                     onClick={() => setStep(2)}

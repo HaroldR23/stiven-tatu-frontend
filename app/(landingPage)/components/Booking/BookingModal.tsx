@@ -5,17 +5,24 @@ import { X } from 'lucide-react';
 import { BookingModalProps, FormData } from '@/app/models';
 import BookingForm from './BookingForm';
 import { initFormData } from '@/app/constants';
+import { scheduleAppointmentService } from '@/app/services/scheduleAppointmentService';
 
 
 const BookingModal = ({ isOpen, onClose, language }: BookingModalProps) => {
   const [step, setStep] = useState(1);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formData, setFormData] = useState<FormData>(initFormData);
+  const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = () => {
-    console.log('Form submitted:', formData);
-    setFormData(initFormData);
-    setIsSubmitted(true);
+  const handleSubmit = async () => {
+    try {
+      // await scheduleAppointmentService(formData);
+      setFormData(initFormData);
+      setIsSubmitted(true);
+    } catch (error) {
+      console.log('Error scheduling appointment:', error);
+      setError(error instanceof Error ? error.message : 'An unexpected error occurred');
+    }
   };
 
   const handleClose = () => {
@@ -63,7 +70,8 @@ const BookingModal = ({ isOpen, onClose, language }: BookingModalProps) => {
               </>
             )}
           </div>
-          <button onClick={handleClose} className="hover:text-accent transition-colors">
+
+          <button onClick={handleClose} className="hover:text-accent transition-colors cursor-pointer">
             <X size={24} />
           </button>
         </div>
@@ -79,6 +87,8 @@ const BookingModal = ({ isOpen, onClose, language }: BookingModalProps) => {
           isSubmitted={isSubmitted}
           setStep={setStep}
           toggleStyle={toggleStyle}
+          error={error}
+          clearError={() => setError(null)}
         />
       </motion.div>
     </div>
