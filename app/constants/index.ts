@@ -80,7 +80,8 @@ export const formContent = {
       step3: {
         title: 'Información adicional',
         allergies: 'Alergias o condiciones médicas',
-        preferredDate: 'Preferencias de fecha y horario',
+        preferredDate: 'Fecha de preferencia',
+        preferredTime: 'Horario de preferencia',
         over18: 'Soy mayor de 18 años',
         privacy: 'Acepto políticas de privacidad',
         submit: 'Enviar solicitud',
@@ -117,7 +118,8 @@ export const formContent = {
       step3: {
         title: 'Additional Information',
         allergies: 'Allergies or medical conditions',
-        preferredDate: 'Date and time preferences',
+        preferredDate: 'Date preferences',
+        preferredTime: 'Time preferences',
         over18: 'I am over 18 years old',
         privacy: 'I accept privacy policies',
         submit: 'Submit Request',
@@ -144,6 +146,7 @@ export const initFormData: FormData = {
     reference: '',
     allergies: '',
     preferredDate: '',
+    preferredTime: '',
     isOver18: false,
     acceptsPrivacy: false
 };

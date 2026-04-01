@@ -30,8 +30,12 @@ export interface FormData {
   // Step 3
   allergies: string;
   preferredDate: string;
+  preferredTime: string;
   isOver18: boolean;
   acceptsPrivacy: boolean;
+
+  // Captcha
+  captchaToken?: string;
 }
 export interface BookingFormProps extends BaseProps {
   formData: FormData;
@@ -42,6 +46,8 @@ export interface BookingFormProps extends BaseProps {
   setStep: React.Dispatch<React.SetStateAction<number>>;
   toggleStyle: (style: string) => void;
   step: number;
+  error: string | null;
+  clearError?: () => void;
 }
 export interface BookingProcessProps extends BaseProps {
   onBookingClick: () => void;
