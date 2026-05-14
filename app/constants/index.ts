@@ -4,6 +4,7 @@ import {
   Clock, 
   Droplet, 
   Facebook, 
+  GraduationCap, 
   Instagram, 
   Mail, 
   MapPin, 
@@ -11,8 +12,11 @@ import {
   Pen, 
   Shield, 
   Sparkles, 
-  Sun, 
-  Youtube
+  Sun,
+  Zap,
+  Youtube,
+  Users,
+  Star
 } from "lucide-react";
 import { TikTok } from "./icons";
 import { FormData, Languages } from "../models";
@@ -25,10 +29,10 @@ export const networkLinks = [
   { name: 'YouTube', icon: Youtube, url: 'https://www.youtube.com/@stiventatu' }
 ];
 export const navItems = {
-    es: ['Inicio', 'Acerca', 'Trabajos', 'Productos', 'Cursos', 'Contacto'],
-    en: ['Home', 'About', 'Work', 'Products', 'Courses', 'Contact']
+    es: ['Inicio', 'Acerca', 'Trabajos', 'Productos', 'Cursos', 'Seminario', 'Contacto'],
+    en: ['Home', 'About', 'Work', 'Products', 'Courses', 'Seminar', 'Contact']
   };
-export const sections = ['hero', 'about', 'reviews', 'products', 'courses', 'contact'];
+export const sections = ['hero', 'about', 'reviews', 'products', 'courses', 'seminar', 'contact'];
 export const studyName = ["STIVEN", "TATU"];
 export const footerContent = {
     es: {
@@ -604,3 +608,35 @@ export const floatingContent = {
   },
 };
 export const whatsappUrl = `https://wa.me/5491173647165`;
+export const SeminarSecionContent = {
+    es: {
+      eyebrow: 'Seminario Exclusivo',
+      title: 'Inicia Tu Camino en el Tatuaje',
+      subtitle:
+        'Un programa intensivo diseñado para artistas que están comenzando. Aprende de forma estructurada, con metodología probada y acompañamiento real.',
+      highlights: [
+        { icon: GraduationCap, label: '4 módulos completos' },
+        { icon: Users, label: 'Cupos limitados' },
+        { icon: Star, label: 'Certificado incluido' },
+        { icon: Zap, label: 'Acceso de por vida' },
+      ],
+      teaser:
+        'Desde los fundamentos del arte hasta tu primera sesión real con cliente. Sin vueltas, sin relleno. Solo lo que necesitás saber para arrancar con confianza.',
+      cta: 'Ver Contenido del Seminario',
+    },
+    en: {
+      eyebrow: 'Exclusive Seminar',
+      title: 'Start Your Tattoo Journey',
+      subtitle:
+        'An intensive program designed for artists who are just starting out. Learn in a structured way, with a proven methodology and real support.',
+      highlights: [
+        { icon: GraduationCap, label: '4 complete modules' },
+        { icon: Users, label: 'Limited spots' },
+        { icon: Star, label: 'Certificate included' },
+        { icon: Zap, label: 'Lifetime access' },
+      ],
+      teaser:
+        'From the fundamentals of the art to your first real client session. No fluff, no filler. Just what you need to know to start with confidence.',
+      cta: 'View Seminar Content',
+    },
+  };

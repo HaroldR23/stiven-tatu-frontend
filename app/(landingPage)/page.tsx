@@ -12,6 +12,7 @@ import Courses from "./components/Courses";
 import Contact from "./components/Contact";
 import BookingProcess from "./components/Booking/BookingProcess";
 import FloatingHelpButton from "../components/FloatingButton";
+import SeminarSection from "./components/Seminar";
 
 export default function Home() {
   const { language } = usePreferences();
@@ -26,6 +27,7 @@ export default function Home() {
       <FAQ language={language} />
       <BookingProcess language={language} onBookingClick={() => setIsBookingOpen(true)} />
       {/* <Aftercare language={language} /> */}
+      <SeminarSection language={language} />
       <Courses language={language} />
       <Contact language={language} />
       <FloatingHelpButton language={language} onBookingClick={() => setIsBookingOpen(true)} />
