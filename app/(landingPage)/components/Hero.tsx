@@ -33,8 +33,8 @@ const Hero = ({ language, onBookingClick }: HeroProps) => {
         >
           <source
             src={isTabletOrMobile
-              ? "/tattoo_video_mobile.mp4"
-              : "/tattoo_video_desktop.mp4"
+              ? "/tattoo_video_mobile.mov"
+              : "/tattoo_video_desktop.mov"
             }
             type="video/mp4"
           />
