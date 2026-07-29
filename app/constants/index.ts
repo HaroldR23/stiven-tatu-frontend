@@ -318,24 +318,52 @@ export const FAQContent = {
       title: 'Preguntas Frecuentes',
       faqs: [
         {
+          question: '¿Cómo se calcula el precio de un tatuaje?',
+          answer: 'Cada proyecto es único. El presupuesto depende del tamaño, nivel de detalle, ubicación en el cuerpo y cantidad de sesiones necesarias. Antes de comenzar recibirás un presupuesto claro y sin costos ocultos.'
+        },
+        {
+          question: '¿Cómo reservo una cita?',
+          answer: 'Solo tenés que escribir por WhatsApp, contarme tu idea y enviar referencias si las tenés. Una vez definido el proyecto, se reserva la fecha mediante una seña que luego se descuenta del valor total del tatuaje.'
+        },
+        {
+          question: '¿Hacés diseños personalizados?',
+          answer: 'Sí. Cada diseño se desarrolla pensando en la persona que lo va a llevar. Mi objetivo es crear una composición que se adapte a tu anatomía, tenga buena lectura visual y conserve su calidad con el paso de los años.'
+        },
+        {
+          question: '¿Realizás coberturas de tatuajes?',
+          answer: 'Sí. Analizo cada caso de manera individual para determinar qué posibilidades existen. En muchos casos es posible transformar un tatuaje antiguo en una pieza completamente nueva, aprovechando la composición y el contraste para obtener el mejor resultado.'
+        },
+        {
+          question: '¿Cuántas sesiones puede llevar mi proyecto?',
+          answer: 'Depende del tamaño y la complejidad. Algunas piezas se completan en una sola sesión y otras requieren varias para lograr el nivel de detalle y acabado que buscan mis clientes. Antes de comenzar te explicaré el plan completo.'
+        },
+        {
+          question: '¿Qué estilos de tatuaje realizás?',
+          answer: 'Estoy especializado en realismo en color, black & grey, surrealismo y composición artística. También realizo proyectos de geometría, blackwork, neotribal, anime y coberturas, siempre adaptando el diseño a cada cliente.'
+        },
+        {
+          question: '¿Qué hace diferente tu forma de trabajar?',
+          answer: 'No me limito a copiar imágenes. Cada proyecto se estudia desde la composición, la anatomía y la longevidad del tatuaje para crear una pieza personalizada que se vea bien tanto el día que se hace como muchos años después.'
+        },
+        {
           question: '¿Duele tatuarse?',
-          answer: 'El nivel de dolor varía según la zona del cuerpo y la tolerancia personal. Utilizamos técnicas que minimizan las molestias y nuestros artistas trabajan con cuidado para hacer la experiencia lo más cómoda posible.'
+          answer: 'La sensación varía según la zona del cuerpo y la tolerancia al dolor de cada persona. La mayoría de mis clientes describen la experiencia como totalmente soportable. Durante la sesión hacemos pausas cuando es necesario para que estés cómodo y disfrutes el proceso.'
         },
         {
-          question: '¿Cómo preparo mi piel?',
-          answer: 'Mantén la piel hidratada días antes, evita el alcohol 24h antes de la sesión, descansa bien y come antes de tu cita. No uses cremas el día de la sesión.'
+          question: '¿Cómo preparo mi piel antes de la sesión?',
+          answer: 'Dormí bien la noche anterior, mantenete hidratado y comé normalmente antes de venir. Evitá consumir alcohol durante las 24 horas previas y no expongas la zona al sol. Si la piel llega en buenas condiciones, el tatuaje cicatriza mejor y el resultado es más limpio.'
         },
         {
-          question: '¿Cuánto tarda en sanar?',
-          answer: 'La cicatrización superficial toma 2-3 semanas, mientras que la sanación completa puede tardar 2-3 meses. Sigue nuestras instrucciones de cuidado para mejores resultados.'
+          question: '¿Cuánto tarda en cicatrizar?',
+          answer: 'La piel suele cerrar entre 2 y 4 semanas, aunque la recuperación completa de las capas profundas puede tardar algunas semanas más. Te entregaré una guía detallada de cuidados para que el tatuaje cicatrice correctamente y conserve la mejor calidad posible.'
         },
         {
-          question: '¿Puedo llevar mi diseño?',
-          answer: 'Sí, puedes traer ideas y referencias. Nuestros artistas trabajarán contigo para adaptar o crear un diseño único que se ajuste a tu visión y anatomía.'
+          question: '¿Puedo traer mi propio diseño?',
+          answer: 'Sí. Podés traer una idea, referencias o un diseño propio. Mi trabajo consiste en adaptarlo a tu anatomía, mejorar la composición y asegurar que el resultado funcione como un tatuaje de calidad y no solo como una imagen bonita.'
         },
         {
-          question: '¿Cuidados posteriores?',
-          answer: 'Limpia suavemente con agua y jabón neutro, aplica crema especial 2-3 veces al día, evita el sol directo, no sumerjas en agua (piscinas, mar) durante 2-3 semanas.'
+          question: '¿Qué cuidados debo seguir después del tatuaje?',
+          answer: 'Durante la cicatrización es importante mantener la zona limpia e hidratada, evitar piscinas, mar, exposición al sol y no retirar las costras. Al finalizar la sesión recibirás todas las indicaciones para cuidar tu tatuaje paso a paso.'
         }
       ]
     },
@@ -343,24 +371,52 @@ export const FAQContent = {
       title: 'Frequently Asked Questions',
       faqs: [
         {
-          question: 'Does it hurt to get a tattoo?',
-          answer: 'Pain levels vary depending on body area and personal tolerance. We use techniques that minimize discomfort and our artists work carefully to make the experience as comfortable as possible.'
+          question: 'How is the price of a tattoo calculated?',
+          answer: 'Every project is unique. The quote depends on the size, level of detail, location on the body, and number of sessions required. Before we begin, you’ll receive a clear quote with no hidden costs.'
         },
         {
-          question: 'How do I prepare my skin?',
-          answer: 'Keep your skin moisturized days before, avoid alcohol 24h before the session, rest well and eat before your appointment. Don\'t use creams on the day of the session.'
+          question: 'How do I book an appointment?',
+          answer: 'Just message me on WhatsApp, tell me your idea, and send any references you have. Once the project is finalized, the date is reserved with a deposit, which is later deducted from the total cost of the tattoo.'
+        },
+        {
+          question: 'Do you create custom designs?',
+          answer: 'Yes. Each design is developed with the person who will be wearing it in mind. My goal is to create a composition that adapts to your anatomy, is visually appealing, and maintains its quality over the years.'
+        },
+        {
+          question: 'Do you cover up existing tattoos?',
+          answer: 'Yes. I analyze each case individually to determine what options are available. In many cases, it’s possible to transform an old tattoo into a completely new piece, using the composition and contrast to achieve the best result.'
+        },
+        {
+          question: 'How many sessions will my project take?',
+          answer: 'It depends on the size and complexity. Some pieces are completed in a single session, while others require several sessions to achieve the level of detail and finish my clients are looking for. I’ll explain the full plan to you before we begin.'
+        },
+        {
+          question: 'What tattoo styles do you do?',
+          answer: 'I specialize in color realism, black & gray, surrealism, and artistic composition. I also do geometric, blackwork, neo-tribal, anime, and cover-up projects, always adapting the design to each client.'
+        },
+        {
+          question: 'What makes your approach different?',
+          answer: 'I don’t just copy images. I approach each project by considering composition, anatomy, and the tattoo’s longevity to create a personalized piece that looks great both on the day it’s done and many years later.'
+        },
+        {
+          question: 'Does getting a tattoo hurt?', 
+          answer: 'The sensation varies depending on the area of the body and each person’s pain tolerance. Most of my clients describe the experience as completely bearable. During the session, we take breaks as needed so you can be comfortable and enjoy the process.'
+        },
+        {
+          question: 'How do I prepare my skin before the session?',
+          answer: 'Get a good night’s sleep the night before, stay hydrated, and eat normally before coming in. Avoid alcohol for 24 hours beforehand and don’t expose the area to the sun. If your skin is in good condition, the tattoo will heal better and the result will be cleaner.'
         },
         {
           question: 'How long does it take to heal?',
-          answer: 'Superficial healing takes 2-3 weeks, while complete healing can take 2-3 months. Follow our care instructions for best results.'
+          answer: 'The skin usually heals within 2 to 4 weeks, although full recovery of the deeper layers may take a few more weeks. I’ll provide you with a detailed aftercare guide to ensure your tattoo heals properly and maintains the best possible quality.'
         },
         {
           question: 'Can I bring my own design?',
-          answer: 'Yes, you can bring ideas and references. Our artists will work with you to adapt or create a unique design that fits your vision and anatomy.'
+          answer: 'Yes. You can bring an idea, references, or your own design. My job is to adapt it to your anatomy, improve the composition, and ensure that the result works as a high-quality tattoo—not just as a pretty picture.'
         },
         {
-          question: 'Aftercare?',
-          answer: 'Gently clean with water and neutral soap, apply special cream 2-3 times a day, avoid direct sun, don\'t submerge in water (pools, sea) for 2-3 weeks.'
+          question: 'What aftercare should I follow after getting a tattoo?',
+          answer: 'During the healing process, it’s important to keep the area clean and moisturized, avoid swimming pools, the ocean, and sun exposure, and do not pick at the scabs. At the end of the session, you’ll receive step-by-step instructions on how to care for your tattoo.'
         }
       ]
     }
