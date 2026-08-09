@@ -5,8 +5,15 @@ import { FAQContent } from '@/app/constants';
 import { FAQProps } from '@/app/models';
 
 
+const INITIAL_VISIBLE = 6;
+
 const FAQ = ({ language }: FAQProps) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [showAll, setShowAll] = useState(false);
+
+  const allFaqs = FAQContent[language].faqs;
+  const visibleFaqs = showAll ? allFaqs : allFaqs.slice(0, INITIAL_VISIBLE);
+  const hasMore = allFaqs.length > INITIAL_VISIBLE;
  
   return (
     <section id="faq" className="py-24 px-4 sm:px-6 lg:px-8 bg-background">
@@ -27,7 +34,7 @@ const FAQ = ({ language }: FAQProps) => {
         </motion.div>
 
         <div className="space-y-4">
-          {FAQContent[language].faqs.map((faq, index) => (
+          {visibleFaqs.map((faq, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
@@ -63,6 +70,32 @@ const FAQ = ({ language }: FAQProps) => {
             </motion.div>
           ))}
         </div>
+
+        {hasMore && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.4 }}
+            className="flex justify-center mt-10"
+          >
+            <button
+              onClick={() => setShowAll(prev => !prev)}
+              className="flex items-center gap-2 px-6 py-3 border border-accent text-accent hover:bg-accent hover:text-background transition-colors"
+            >
+              <span>
+                {showAll
+                  ? (language === 'es' ? 'Ver menos' : 'Show less')
+                  : (language === 'es' ? 'Ver más preguntas' : 'Show more questions')}
+              </span>
+              <motion.div
+                animate={{ rotate: showAll ? 180 : 0 }}
+                transition={{ duration: 0.3 }}
+              >
+                <ChevronDown size={18} />
+              </motion.div>
+            </button>
+          </motion.div>
+        )}
       </div>
     </section>
   );
