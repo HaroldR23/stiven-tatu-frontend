@@ -5,7 +5,7 @@ import usePreferences from "../hooks/usePreferences";
 import Hero from "./components/Hero";
 import BookingModal from "./components/Booking/BookingModal";
 import About from "./components/About";
-import Reviews from "./components/Reviews";
+import Reviews from "./components/Reviews/Reviews";
 import Products from "./components/Products";
 import FAQ from "./components/FAQ";
 import Courses from "./components/Courses";

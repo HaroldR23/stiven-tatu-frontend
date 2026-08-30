@@ -201,56 +201,119 @@ export const aboutContent = {
 export const reviewsContent = {
     es: {
       title: 'Reseñas de clientes',
+      seeMore: 'Ver más',
+      seeLess: 'Ver menos',
       reviews: [
         {
-          name: 'María González',
-          review: 'El diseño superó mis expectativas. Profesionalismo y arte real.',
-          image: 'https://images.unsplash.com/photo-1764698072654-b8c360ff480e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwdGF0dG9vJTIwZGVzaWduJTIwZWxlZ2FudHxlbnwxfHx8fDE3NzE1MDQ3MTV8MA&ixlib=rb-4.1.0&q=80&w=1080'
+          name: 'Martín',
+          review: 'Llegué con una idea bastante clara, pero no esperaba que el resultado final superara tanto lo que tenía en mente. Desde la primera consulta Stiven entendió perfectamente lo que buscaba y, sobre todo, supo adaptar el diseño a mi anatomía. El proyecto llevó varias sesiones y durante todo el proceso mantuvo el mismo nivel de atención y detalle. El resultado del brazo completo es impresionante. Mucha gente me pregunta quién me lo hizo y para mí eso ya dice bastante.',
+          image: '/martin_review.jpeg'
         },
         {
-          name: 'Carlos Ramírez',
-          review: 'Increíble experiencia de principio a fin. Totalmente recomendado.',
-          image: 'https://images.unsplash.com/photo-1758404255679-9afd847ede1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnZW9tZXRyaWMlMjB0YXR0b28lMjBibGFjayUyMGluayUyMGFydGlzdGljfGVufDF8fHx8MTc3MTUwNDcxOHww&ixlib=rb-4.1.0&q=80&w=1080'
+          name: 'Axel',
+          review: 'Mi proyecto de torso completo terminó siendo mucho más grande de lo que originalmente imaginaba. Lo trabajamos durante varios meses y fui viendo cómo cada sesión iba construyendo el resultado final. Lo que más valoro es que Stiven no se limita a tatuar lo que uno pide. Hay un verdadero trabajo de composición, proporciones, movimiento y adaptación al cuerpo.',
+          image: '/axel_review.jpeg'
         },
         {
-          name: 'Ana Martínez',
-          review: 'Atención personalizada y resultado impecable. Volveré sin duda.',
-          image: 'https://images.unsplash.com/photo-1623792085620-1f3160a255e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxibGFjayUyMHdoaXRlJTIwdGF0dG9vJTIwYXJ0JTIwZGV0YWlsZWR8ZW58MXx8fHwxNzcxNTA0NzE0fDA&ixlib=rb-4.1.0&q=80&w=1080'
+          name: 'Alejandro',
+          review: 'Soy bastante exigente con los detalles y, sinceramente, tenía mis dudas antes de empezar porque buscaba un nivel de realismo muy específico. Desde la primera conversación me sorprendió la seguridad con la que Stiven planteó el proyecto. Durante la sesión fue muy profesional y cuidadoso, pero lo que realmente me sorprendió fue ver el tatuaje terminado. La calidad de los detalles y la forma en que el tatuaje se integra con el cuerpo superaron mis expectativas.',
+          image: '/alejandro_review.jpeg'
         },
         {
-          name: 'Diego López',
-          review: 'Trabajo detallado y limpio. Los mejores artistas de la ciudad.',
-          image: 'https://images.unsplash.com/photo-1607943917700-18ec6ff5a4c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0YXR0b28lMjBhcnRpc3QlMjB3b3Jrc3BhY2UlMjBzdHVkaW8lMjBkYXJrfGVufDF8fHx8MTc3MTUwNDcxM3ww&ixlib=rb-4.1.0&q=80&w=1080'
+          name: 'Juliana',
+          review: 'Era mi primer tatuaje grande y estaba bastante nerviosa. Desde que entré al estudio la experiencia fue completamente diferente a lo que esperaba. El ambiente es muy agradable, el trato es cercano y al mismo tiempo extremadamente profesional. Stiven se tomó el tiempo necesario para explicarme cada parte del proyecto y nunca sentí que estuviera apurado por terminar. El resultado fue espectacular. Salí pensando que había tomado una muy buena decisión.',
+          image: '/juliana_review.jpeg'
+        },
+        {
+          name: 'Massimiliano',
+          review: 'Comenzamos este proyecto pensando en hacer solamente algunas piezas y terminó convirtiéndose en un brazo completo. Fueron varias sesiones a lo largo del año y en cada una mantuvimos una línea estética coherente. Algo que me gustó mucho fue que el proyecto no se sintió como una colección de tatuajes independientes. Todo tiene conexión y sentido dentro del brazo. Además del resultado artístico, destaco muchísimo la seriedad y organización de Stiven durante todo el proceso.',
+          image: '/massimiliano_review.jpeg'
+        },
+        {
+          name: 'Aarón',
+          review: 'He trabajado con Stiven en más de un proyecto y cada vez termino más conforme. Lo que más me sorprendió la primera vez fue la diferencia entre ver un diseño en pantalla y verlo finalmente adaptado al cuerpo. Hay un nivel de criterio artístico que se nota muchísimo. El estudio también tiene un ambiente muy cómodo. Para proyectos largos, donde tienes que pasar varias horas y volver varias veces, eso hace una diferencia enorme.',
+          image: '/aaron_review.jpeg'
+        },
+        {
+          name: 'Horacio',
+          review: 'No buscaba simplemente un tatuaje bonito. Quería algo que tuviera una identidad propia y que estuviera pensado específicamente para mí. Stiven hizo muchas preguntas antes de comenzar y eso me dio mucha confianza. Se nota que hay un proceso detrás de cada decisión. El proyecto llevó varias sesiones y el resultado final fue exactamente lo que esperaba, pero con una calidad que sinceramente no sabía que podía conseguir.',
+          image: '/horacio_review.jpeg'
+        },
+        {
+          name: 'León',
+          review: 'Mi brazo nos llevó prácticamente un año entre sesiones, cicatrización y ajustes del proyecto. Y creo que justamente eso demuestra el nivel de dedicación. Nunca tuve la sensación de que hubiera que correr para terminar. Cada sesión tenía un objetivo y el resultado se iba construyendo progresivamente. La calidad del tatuaje es excelente, pero también quiero destacar muchísimo el trato durante todo el proceso. Después de tantas horas y tantas visitas, terminas sintiéndote muy cómodo en el estudio.',
+          image: '/leon_review.jpeg'
+        },
+        {
+          name: 'Julián',
+          review: 'He visto muchísimos trabajos de tatuajes antes de decidirme y por eso tenía expectativas bastante altas. Lo que me sorprendió fue que la experiencia completa estuvo a la altura del trabajo que había visto en redes. Desde la atención inicial hasta la planificación del proyecto y las sesiones, todo fue muy profesional. El tatuaje terminado tiene una presencia increíble y varios meses después sigo descubriendo detalles que me encantan.',
+          image: '/julian_review.jpeg'
+        },
+        {
+          name: 'Cristian',
+          review: 'Mi proyecto requirió varias sesiones y fue una inversión importante, así que quería estar seguro de elegir al tatuador correcto. Desde el primer encuentro sentí que estaba tratando con alguien que realmente entiende el tatuaje como una obra completa y no simplemente como una imagen que se coloca sobre la piel. El resultado superó mis expectativas. Pero si tuviera que destacar una sola cosa, sería la combinación entre calidad artística, profesionalismo y el trato cálido durante todo el proceso.Sin dudas volvería a hacerme otro proyecto con Stiven.',
+          image: '/cristian_review.jpeg'
         }
       ]
     },
     en: {
       title: 'Client Reviews',
+      seeMore: 'See more',
+      seeLess: 'See less',
       reviews: [
         {
-          name: 'María González',
-          review: 'The design exceeded my expectations. True professionalism and art.',
-          image: 'https://images.unsplash.com/photo-1764698072654-b8c360ff480e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwdGF0dG9vJTIwZGVzaWduJTIwZWxlZ2FudHxlbnwxfHx8fDE3NzE1MDQ3MTV8MA&ixlib=rb-4.1.0&q=80&w=1080'
+          name: 'Martín',
+          review: 'I came in with a fairly clear idea, but I didn’t expect the final result to surpass what I had in mind by so much. From the very first consultation, Stiven understood exactly what I was looking for and, above all, knew how to adapt the design to my anatomy. The project took several sessions, and throughout the entire process he maintained the same level of attention and detail. The result of the full sleeve is impressive. A lot of people ask me who did it, and for me, that already says a lot.',
+          image: '/martin_review.jpeg'
         },
         {
-          name: 'Carlos Ramírez',
-          review: 'Amazing experience from start to finish. Highly recommended.',
-          image: 'https://images.unsplash.com/photo-1758404255679-9afd847ede1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnZW9tZXRyaWMlMjB0YXR0b28lMjBibGFjayUyMGluayUyMGFydGlzdGljfGVufDF8fHx8MTc3MTUwNDcxOHww&ixlib=rb-4.1.0&q=80&w=1080'
+          name: 'Axel',
+          review: 'My full torso project ended up being much bigger than I originally imagined. We worked on it over several months, and I was able to see how each session gradually built the final result. What I value most is that Stiven doesn’t simply tattoo what you ask for. There is real attention to composition, proportions, movement, and how the design adapts to the body.',
+          image: '/axel_review.jpeg'
         },
         {
-          name: 'Ana Martínez',
-          review: 'Personalized attention and impeccable results. Will return for sure.',
-          image: 'https://images.unsplash.com/photo-1623792085620-1f3160a255e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxibGFjayUyMHdoaXRlJTIwdGF0dG9vJTIwYXJ0JTIwZGV0YWlsZWR8ZW58MXx8fHwxNzcxNTA0NzE0fDA&ixlib=rb-4.1.0&q=80&w=1080'
+          name: 'Alejandro',
+          review: 'I’m quite demanding when it comes to details and, honestly, I had my doubts before starting because I was looking for a very specific level of realism. From our first conversation, I was impressed by the confidence with which Stiven approached the project. During the session, he was very professional and careful, but what really surprised me was seeing the finished tattoo. The quality of the details and the way the tattoo integrates with the body exceeded my expectations.',
+          image: '/alejandro_review.jpeg'
         },
         {
-          name: 'Diego López',
-          review: 'Detailed and clean work. The best artists in the city.',
-          image: 'https://images.unsplash.com/photo-1607943917700-18ec6ff5a4c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0YXR0b28lMjBhcnRpc3QlMjB3b3Jrc3BhY2UlMjBzdHVkaW8lMjBkYXJrfGVufDF8fHx8MTc3MTUwNDcxM3ww&ixlib=rb-4.1.0&q=80&w=1080'
+          name: 'Juliana',
+          review: 'It was my first large tattoo and I was pretty nervous. From the moment I walked into the studio, the experience was completely different from what I expected. The atmosphere is very pleasant, the service is friendly, and at the same time extremely professional. Stiven took the time needed to explain every part of the project to me, and I never felt like he was in a rush to finish. The result was spectacular. I left feeling that I had made a very good decision.',
+          image: '/juliana_review.jpeg'
+        },
+        {
+          name: 'Massimiliano',
+          review: 'We started this project thinking we would only do a few pieces, and it ended up becoming a full sleeve. There were several sessions throughout the year, and in each one we maintained a consistent aesthetic. Something I really liked was that the project never felt like a collection of independent tattoos. Everything connects and makes sense as part of the arm. Beyond the artistic result, I also really appreciate Stiven’s professionalism and organization throughout the entire process.',
+          image: '/massimiliano_review.jpeg'
+        },
+        {
+          name: 'Aarón',
+          review: 'I’ve worked with Stiven on more than one project, and every time I end up even more satisfied. What surprised me the most the first time was the difference between seeing a design on a screen and finally seeing it adapted to the body. There is a level of artistic judgment that really stands out. The studio also has a very comfortable atmosphere. For long projects, where you have to spend several hours there and come back multiple times, that makes a huge difference.',
+          image: '/aaron_review.jpeg'
+        },
+        {
+          name: 'Horacio',
+          review: 'I wasn’t simply looking for a nice tattoo. I wanted something with its own identity that was specifically designed for me. Stiven asked many questions before getting started, and that gave me a lot of confidence. You can tell there is a process behind every decision. The project took several sessions, and the final result was exactly what I expected, but with a level of quality that I honestly didn’t know was possible to achieve.',
+          image: '/horacio_review.jpeg'
+        },
+        {
+          name: 'León',
+          review: 'My arm took practically a year between sessions, healing, and adjustments to the project. And I think that really shows the level of dedication involved. I never felt like we had to rush to finish. Every session had a purpose, and the result was built progressively. The quality of the tattoo is excellent, but I also want to highlight how great the experience was throughout the entire process. After so many hours and so many visits, you end up feeling very comfortable at the studio.',
+          image: '/leon_review.jpeg'
+        },
+        {
+          name: 'Julián',
+          review: 'I had seen countless tattoo pieces before deciding, so I had pretty high expectations. What surprised me was that the entire experience lived up to the quality of the work I had seen on social media. From the initial consultation to the project planning and the sessions, everything was very professional. The finished tattoo has an incredible presence, and even several months later, I’m still discovering details that I love.',
+          image: '/julian_review.jpeg'
+        },
+        {
+          name: 'Cristian',
+          review: 'My project required several sessions and was a significant investment, so I wanted to make sure I chose the right tattoo artist. From the first meeting, I felt like I was dealing with someone who truly understands tattooing as a complete work of art, rather than simply an image placed on the skin. The result exceeded my expectations. But if I had to highlight just one thing, it would be the combination of artistic quality, professionalism, and the warm treatment throughout the entire process. Without a doubt, I would work on another project with Stiven.',
+          image: '/cristian_review.jpeg'
         }
-      ]
+]
     }
   };
-
 export const productsContent = {
     es: {
       title: 'Productos',

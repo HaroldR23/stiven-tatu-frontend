@@ -1,13 +1,24 @@
 import { motion } from 'motion/react';
-import { useEffect, useRef, useState, useCallback } from 'react';
-import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
+import { useEffect, useState, useCallback } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import { ReviewsProps } from '@/app/models';
 import { reviewsContent } from '@/app/constants';
+import ReviewCard from './ReviewCard';
 
 
 const Reviews = ({ language }: ReviewsProps) => {
+  const [expandedCards, setExpandedCards] = useState<Set<number>>(new Set());
+  const toggleExpanded = (index: number) => {
+    setExpandedCards(prev => {
+      const next = new Set(prev);
+      if (next.has(index)) next.delete(index);
+      else next.add(index);
+      return next;
+    });
+  };
+
   const [emblaRef, emblaApi] = useEmblaCarousel(
     { 
       loop: true,
@@ -84,29 +95,19 @@ const Reviews = ({ language }: ReviewsProps) => {
           {/* Carousel Container */}
           <div className="overflow-hidden" ref={emblaRef}>
             <div className="flex">
-              {reviewsContent[language].reviews.map((review, index) => (
-                <div 
-                  key={index} 
-                  className="flex-[0_0_100%] min-w-0 px-3 sm:flex-[0_0_50%] lg:flex-[0_0_33.333%]"
-                >
-                  <div className="bg-card border border-white/5 p-6 h-full">
-                    <div className="aspect-square mb-4 overflow-hidden bg-secondary">
-                      <img
-                        src={review.image}
-                        alt={review.name}
-                        className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
-                      />
-                    </div>
-                    <div className="flex mb-3">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} size={16} className="fill-accent text-accent" />
-                      ))}
-                    </div>
-                    <p className="text-muted-foreground mb-4 italic">"{review.review}"</p>
-                    <p className="font-medium">— {review.name}</p>
-                  </div>
-                </div>
-              ))}
+              {reviewsContent[language].reviews.map((review, index) => {
+                const isExpanded = expandedCards.has(index);
+                return (
+                  <ReviewCard
+                    key={index}
+                    review={review}
+                    language={language}
+                    isExpanded={isExpanded}
+                    toggleExpanded={toggleExpanded}
+                    index={index}
+                  />
+                );
+              })}
             </div>
           </div>
 

@@ -63,3 +63,16 @@ export interface AftercareProps extends BaseProps {}
 export interface CoursesProps extends BaseProps {}
 export interface ContactProps extends BaseProps {}
 export interface SeminarSectionProps extends BaseProps {}
+export interface Review {
+  image: string;
+  name: string;
+  review: string;
+}
+
+export interface ReviewCardProps {
+  review: Review;
+  language: Languages;
+  isExpanded: boolean;
+  toggleExpanded: (index: number) => void;
+  index: number;
+}
